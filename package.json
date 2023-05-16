@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mycompany/my-language-extension"
+    "url": "https://github.com/HonkenPark/vsce-jinie"
   },
   "license": "MIT"
 }
