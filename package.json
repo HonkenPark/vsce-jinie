@@ -1,0 +1,36 @@
+{
+  "name": "jinie-for-mediazen",
+  "displayName": "JINIE for MediaZen",
+  "publisher": "Mediazen PD R&D",
+  "description": "The formatter and sytax highlighter for JINIE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon/jinie__icon2.png",
+  "contributes": {
+    "languages": [{
+      "id": "jinie",
+      "aliases": ["JINIE", "jinie"],
+      "extensions": [".DEFINITION"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icon/jinie__icon2.png",
+        "dark": "./icon/jinie__icon2.png"
+      }
+    }],
+    "grammars": [{
+      "language": "jinie",
+      "scopeName": "source.jinie",
+      "path": "./syntaxes/jinie.tmLanguage.json"
+    }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mycompany/my-language-extension"
+  },
+  "license": "MIT"
+}

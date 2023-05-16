@@ -1,0 +1,109 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "JINIE",
+	"scopeName": "source.jinie",
+	"fileTypes": ["DEFINITION"],
+	"patterns": [
+		{
+			"name": "comment.line.exclamation.jinie",
+			"match": "(\\s*)!.*$"
+		},
+		{
+			"name": "keyword.constant.jinie",
+			"match": "\\@([A-Za-z0-9_]+)"
+		},
+		{
+			"name": "keyword.variable.jinie",
+			"match": "\\$[A-Za-z0-9.]+"
+		},
+		{
+			"name": "keyword.numeric.jinie",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "keyword.modifier.jinie",
+			"match": "(?<!\\S)(?:PERMANENT|TEMPORARY)(?!\\S)"
+		},
+		{
+			"name": "constant.language.boolean.jinie",
+			"match": "(?<!\\S)(?:TRUE|FALSE)(?!\\S)"
+		},
+		{
+			"name": "punctuation.definition.block.begin.jinie",
+			"match": "(?<!\\S)(JINIE)\\b\\s+([A-Za-z_][A-Za-z0-9_.]*)",
+			"captures": {
+				"1": {
+				"name": "punctuation.definition.block.begin.jinie"
+				},
+				"2": {
+				"name": "entity.name.function.jinie"
+				}
+			}
+		},
+		{
+			"name": "punctuation.definition.block.end.jinie",
+			"match": "(?<!\\S)EOP(?!\\S)"
+		},
+		{
+			"name": "keyword.control.jinie",
+			"match": "(?<!\\S)(?:BEGIN|END|IF|ELSE IF|ELSE|THEN|WHILE|DO)(?!\\S)"
+		},
+		{
+			"name": "keyword.declaration.jinie",
+			"match": "(?<!\\S)(CALL)\\b\\s+([A-Za-z_][A-Za-z0-9_.]*)",
+			"captures": {
+				"1": {
+				"name": "keyword.control.jinie"
+				},
+				"2": {
+				"name": "entity.name.function.jinie"
+				}
+			}
+		},
+		{
+			"name": "keyword.type.string.jinie",
+			"match": "(?<!\\S)STRING(?!\\S)"
+		},
+		{
+			"name": "keyword.type.numeric.jinie",
+			"match": "(?<!\\S)NUMBER(?!\\S)"
+		},
+		{
+			"name": "keyword.operator.assignment.jinie",
+			"match": ":=|~="
+		},
+		{
+			"name": "keyword.operator.compare.jinie",
+			"match": ">|>=|<|<="
+		},
+		{
+			"name": "keyword.operator.or.jinie",
+			"match": "\\|"
+		},
+		{
+			"name": "keyword.equal.jinie",
+			"match": "\\="
+		},
+		{
+			"name": "keyword.not-equal.jinie",
+			"match": "\\<\\>"
+		},
+		{
+			"name": "punctuation.terminator.jinie",
+			"match": ";"
+		},
+		{
+			"name": "keyword.log.jinie",
+			"match": "(?<!\\S)(LOG|MESSAGE)\\b(?=\\s\".*\")"
+		},
+		{
+			"name": "string.quoted.double.jinie",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "constant.character.escape.jinie",
+				"match": ""
+			}]
+		}
+	]
+}
