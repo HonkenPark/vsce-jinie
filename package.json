@@ -1,16 +1,16 @@
 {
-  "name": "jinie-for-mediazen",
-  "displayName": "JINIE for MediaZen",
+  "name": "jinie-tm-mediazen",
+  "displayName": "JINIE TM for MZ",
   "publisher": "Mediazen PD R&D",
   "description": "The formatter and sytax highlighter for JINIE",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
-    "Programming Languages"
+    "Extension Packs"
   ],
-  "icon": "icon/jinie__icon2.png",
+  "icon": "icon/jinie_icon_tm.png",
   "contributes": {
     "languages": [{
       "id": "jinie",
